@@ -20,22 +20,23 @@ class MainActivity : AppCompatActivity() {
 
         saveButton.setOnClickListener {
             if(name.text.trim().isEmpty()) { //Check for name
-                Toast.makeText(this, "Error: Name must be provided", Toast.LENGTH_SHORT).show()
+                name.error = "Name must be provided"
+
             }
             else if(email.text.trim().isEmpty()){ //Check for email
-                Toast.makeText(this, "Error: Email must be provided", Toast.LENGTH_SHORT).show()
+                email.error = "Email must be provided"
             }
             else if(password.text.trim().isEmpty()){ //Check for password
-                Toast.makeText(this, "Error: Password must be provided", Toast.LENGTH_SHORT).show()
+                password.error = "Password must be provided"
             }
             else if(confirm.text.trim().isEmpty()){ //Check for password confirmation
-                Toast.makeText(this, "Error: Re-enter password", Toast.LENGTH_SHORT).show()
+                confirm.error = "Re-enter password"
             }
             else if(password.text.trim().toString()!=(confirm.text.trim().toString())) { //Check if password and confirm are equal
-                Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
+                confirm.error = "Passwords do not match"
             }
             else { //End message
-                Toast.makeText(this, "Welcome ${name.text}to the SignUpFormApp", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Welcome ${name.text} to the SignUpFormApp", Toast.LENGTH_SHORT).show()
             }
         }
     }
