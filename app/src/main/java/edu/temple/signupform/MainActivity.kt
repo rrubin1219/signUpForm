@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
             else if(password.text.trim().toString()!=(confirm.text.trim().toString())) { //Check if password and confirm are equal
                 Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
             }
+            else { //End message
+                Toast.makeText(this, "Welcome ${name.text}to the SignUpFormApp", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
