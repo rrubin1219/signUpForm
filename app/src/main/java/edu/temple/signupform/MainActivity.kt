@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             else if(confirm.text.trim().isEmpty()){ //Check for password confirmation
                 confirm.error = "Re-enter password"
             }
-            else if(password.text.trim().toString()!=(confirm.text.trim().toString())) { //Check if password and confirm are equal
+            else if(password.text.trim().toString()!=(confirm.text.trim().toString())) { //Check if password and confirm are equal 
                 confirm.error = "Passwords do not match"
             }
             else { //End message
