@@ -1,6 +1,6 @@
 # signUpForm
 
-The signUpForm App collects the user's name, email, password, and passowrd confirmation. 
+The signUpForm App collects the user's name, email, password, and password confirmation. 
 When the user clicks the Save button, the app will display a message containg the user's name and welcome them to the app.
 
 The app checks if all fields have information in them. If one doesn't, the user will get an error telling them put information in the field.
